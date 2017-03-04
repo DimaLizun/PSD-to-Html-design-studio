@@ -22,6 +22,23 @@ a
 		text-decoration: none
 		color: inherit
 
+.button
+	width: 190px
+	height: 45px
+	outline: none
+	background: $accent-color-pink
+	color: $accent-color-orange
+	font-family: "RobotoBold", sans-serif
+	font-size: 18px
+	border: none
+	border-radius: 20px
+	margin-top: 20px
+	transition: background .3s ease
+	&:hover
+		background: darken($accent-color-pink, 27%)
+	&:active
+		background: $accent-color-pink
+
 .header
 	height: auto
 	background: $main-color
@@ -79,21 +96,6 @@ a
 		font-size: em(15px)
 		color: #a8b9c0
 
-	button
-		width: 190px
-		height: 45px
-		outline: none
-		background: $accent-color-pink
-		color: $accent-color-orange
-		font-family: "RobotoBold", sans-serif
-		font-size: 18px
-		border: none
-		border-radius: 20px
-		margin-top: 20px
-		transition: all .5s background
-		&:hover
-			background: darken($accent-color-pink, 27%)
-		&:active
-			background: $accent-color-pink
+	
 
 
