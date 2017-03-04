@@ -25,7 +25,73 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+.service
+	background: #ffffff
+	.top-text
+		padding-top: 60px 
+		padding-bottom: 40px
+		text-align: center
+		
+		h2
+			font-family: "RobotoLight", sans-serif
+			font-size: em(38px)
+			margin-bottom: 0
+
+		h3
+			font-family: "RobotoLight", sans-serif
+			font-size: em(14px)
+			color: #c5d0d5
+			margin-top: 0
+			
+		.hr
+			hr
+				border: 0
+				height: 2px
+				width: 140px
+				background: #00c6bf
+
+.service-item
+	text-align: center
+
+	.wrap-img
+		display: flex
+		justify-content: space-around
+	.number
+		background: url("/img/sprite-numbers.png")
+		position: absolute
+		width: 100%
+
+	.first
+		background-position: -0px -0px
+		width: 79px
+		height: 194px
+		margin-left: -26px;
+	.second
+		background-position: -0px -204px
+		width: 132px
+		height: 194px
+	.third
+		background-position: -0px -408px
+		width: 131px
+		height: 198px
+
+	.fa
+		z-index: 2
+		position: relative
+		padding-top: 128px
+		font-size: 70px
+		color: #00c6bf
+
+	h2
+		padding-top: 20px
+		font-family: "RobotoCondensedBold", sans-serif
+		font-size: em(30px)
+		color: $accent-color-orange
+
+	p
+		font-size: em(18px)
+		padding-bottom: 20px
+		color: #a8b9c0
 
 
 //ALWAYS END
