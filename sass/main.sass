@@ -60,7 +60,7 @@ body textarea:required:valid
 			display: flex
 			justify-content: space-around
 		.number
-			background: url("/img/sprite-numbers.png")
+			background: url("img/sprite-numbers.png")
 			position: absolute
 			width: 100%
 
@@ -232,6 +232,134 @@ body textarea:required:valid
 				font-family: "RobotoLight", sans-serif
 				font-size: em(13px)
 				color: #a6a9ab
+
+
+.brand
+	height: auto
+	background: #ffffff
+	margin: 35px 0
+	text-align: center
+
+
+.start-project
+	height: auto
+	background: $main-color
+	text-align: center
+	.content
+		margin: 85px 0 110px
+		h2
+			font-family: "RobotoRegular", sans-serif
+			font-size: em(30px)
+			color: #ffffff
+		p
+			font-family: "RobotoLight", sans-serif
+			font-size: em(17px)
+			color: #a6a9ab
+
+.blog
+	height: auto
+	background: #ffffff
+	text-align: center
+
+	.blog-img
+		width: 370px
+		height: auto
+
+	&-date,
+	&-text
+		margin: 0
+
+	&-date
+		font-family: "RobotoLight", sans-serif
+		font-size: em(14px)
+		color: #838384
+		margin-top: 10px
+
+	&-text
+		font-family: "RobotoBold", sans-serif
+		font-size: em(20px)
+
+	.button
+		margin: 60px 0 70px
+
+.email
+	height: auto
+	background: $accent-color-orange
+	text-align: center
+
+	.email-text
+		font-family: "RobotoBold", sans-serif
+		font-size: em(17px)
+		margin-top: 30px
+		color: $main-color
+
+	input	
+		width: 330px
+		font-family: "RobotoBold", sans-serif
+		font-size: em(16px)
+		border-radius: 10px
+		padding-left: 13px
+		margin-top: 30px
+		border: none
+		outline: none
+		color: $main-color
+
+	.button
+		background: $main-color
+		margin-bottom: 20px
+		&:hover
+			background: darken($main-color, 10%)
+		&:active
+			background: $main-color
+
+.footer
+	height: auto
+	background: $main-color
+	.block-context
+		margin: 40px 0 
+		color: #e0dede
+		h2
+			color: #ffffff
+		.text
+			width: 88%
+			font-size: em(15px)
+			&-up
+				padding-top: 20px
+			&-down
+				padding-top: 45px
+				margin-bottom: 0
+		ul
+			list-style: none
+			padding: 0
+
+			li
+				padding-top: 15px
+			a
+				font-family: "RobotoLight", sans-serif
+				transition: all .5s ease
+				cursor: pointer
+				&:hover
+					color: $accent-color-orange
+					font-family: "RobotoBold", sans-serif
+		.button
+			width: 330px
+			cursor: text
+			text-align: center
+			p
+				padding-top: 2%
+
+
+		.social-icon
+			width: 60%
+			display: flex
+			justify-content: space-around
+			margin-top: 40px
+			.fa
+				font-size: 25px
+				color: #ffffff
+				transition: all .3s ease
+				&:hover
+					color: $accent-color-pink
 
 
 
