@@ -1,14 +1,13 @@
 @import "bourbon"
 @import "vars.sass"
 
-@import "app/libs/font-awesome/scss/font-awesome.scss"
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
+	font-family: "Roboto", sans-serif
 	overflow-x: hidden
 
 .hidden
@@ -28,8 +27,7 @@ a
 	outline: none
 	background: $accent-color-pink
 	color: $accent-color-orange
-	font-family: "RobotoRegular", sans-serif
-	font-size: 18px
+	font-size: em(18px)
 	border: none
 	border-radius: 20px
 	margin-top: 20px
@@ -74,9 +72,8 @@ a
 			border-radius: 12px
 			background: darken(#ffffff, 15%)
 			color: #444444
-			padding-left: 10px
 			margin-left: 15px
-			transition: all .5s background
+			transition: background .5s ease
 			&:hover,
 			&:focus
 				background: #ffffff
@@ -87,13 +84,13 @@ a
 
 	h2
 		margin-bottom: 0
-		font-family: "RobotoCondensedLight", sans-serif
+		font-weight: lighter
 		font-size: em(52px)
 		color: #f0f8fb
 	h3
 		margin-top: 0
-		font-family: "RobotoLight", sans-serif
-		font-size: em(16px)
+		font-weight: normal
+		font-size: em(18px)
 		color: #a8b9c0
 
 	
