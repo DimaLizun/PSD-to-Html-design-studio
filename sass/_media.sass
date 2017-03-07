@@ -5,11 +5,37 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	.laptop-about
+		margin-top: 85px
+		
+	.blog
+		.top-text 
+			padding-bottom: 0
+		.blog-item
+			margin-top: 45px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.about
+		&-content
+			margin-top: 0
+
+	.email
+		input
+			width: 235px
+
+	.blog
+		.button
+			margin: 35px 0 40px
+	.footer 		
+		.block-context
+			.text-down 
+				padding-top: 27px
+
+	
+			
 
 
 /* Small Devices, Tablets */
@@ -36,8 +62,64 @@
 		-ms-animation: none !important
 		animation: none !important
 
-		.hamburger
-			padding: 27px 0px
+	.hamburger
+		padding: 27px 0px
+
+	.work
+		.top-text
+			padding-bottom: 10px
+		.category
+			display: flex
+			flex-direction: column
+			&-item
+				padding: 0
+				margin-top: 10px
+				margin-left: 0
+				&:active
+					background: inherit
+
+	.about
+		.top-text
+			padding-bottom: 0
+		&-content
+			text-align: center
+			margin-bottom: 0
+
+	.laptop-about
+		margin-top: 50px
+
+	.wrap-context
+		margin-bottom: 40px
+
+	.team
+		&-item
+			margin-top: 0
+
+	.brand
+		img
+			margin-top: 18px
+			&:last-child
+				margin-bottom: 15px
+
+	.email
+		input
+			width: 260px
+			height: 40px
+			margin-top: 0
+		.button
+			margin: 28px 0
+
+	.footer
+		.block-context
+			text-align: center
+			.wrapp-elem
+				display: inline-flex
+				flex-direction: column
+				justify-content: center
+
+			.social-icon 
+				width: 100%
+
 
 
 
@@ -53,6 +135,9 @@
 			font-size: em(44px)
 		h3
 			font-size: em(17px)
+			
+
+	
 
 
 /* Custom, iPhone Retina */
