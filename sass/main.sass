@@ -1,10 +1,9 @@
 @import "bourbon"
 @import "vars.sass"
 
+@import "app/libs/css-hamburgers/dist/hamburgers"
+@import "app/libs/jQuery.mmenu/dist/css/jquery.mmenu.all"
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
 
 *:-moz-placeholder
 	color: #666
@@ -360,6 +359,45 @@ body textarea:required:valid
 				transition: all .3s ease
 				&:hover
 					color: $accent-color-pink
+//mmenu
+.mm-menu.mm-offcanvas 
+		z-index: 10 !important
+		width: 75%
+		font-family: "RobotoBold",sans-serif 
+		background: lighten($main-color, 75%)
+		a
+			font-size: em(27px)
+#my-menu
+	a
+		padding: 30px
+		font-weight: bold
+		text-align: center
+		color: $main-color
+		&::after
+			content: ""
+			
+	.mm-listview>li:not(.mm-divider):after
+		left: 0
+	.mm-title
+		color: #a7a7a7
+		font-weight: normal
+	.mm-navbar
+		height: 67px
+	.mm-listview
+		margin-top: 5px
+
+
+.hamburger
+		padding: 27px 7px
+		&:focus
+			outline: none
+		.hamburger-inner
+			background: #ffffff
+			&::before,
+			&::after
+				content: ""
+				background: #ffffff
+			
 
 //ALWAYS END
 @import "media"

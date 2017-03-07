@@ -76,6 +76,43 @@ $(function() {
 		}
 	}
 
+
+	var $menu = $("#my-menu").mmenu({
+   //   options
+ 	});
+	var $icon = $("#my-icon");
+	var API = $menu.data( "mmenu" );
+
+	$icon.on( "click", function() {
+		API.open();
+	});
+
+	API.bind( "opened", function() {
+		setTimeout(function() {
+			$icon.addClass( "is-active" );
+		}, 100);
+	});
+	API.bind( "closed", function() {
+		setTimeout(function() {
+			$icon.removeClass( "is-active" );
+		}, 100);
+	});
+
+
+  // scroll
+	$('a[href^="#"]').click(function () {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+
+	
+
+
+
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 });
