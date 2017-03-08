@@ -107,17 +107,18 @@ body textarea:required:valid
 		border: 1px solid lighten($main-color, 74%)
 		opacity: .7
 		transition: all .5s ease
+		position: relative
 		&:hover
 			transform: scale(1.1)
 			opacity: 1
-		&::before
-			content: ""
-			background: green
-
+			z-index: 2
 
 	.button
 		width: 230px
 		margin: 40px 0 70px
+
+.work-item__view
+	display: none
 
 
 .category
@@ -138,7 +139,7 @@ body textarea:required:valid
 			background: darken($accent-color-pink, 20%)
 		&:first-child
 			margin-left: 0
-	
+
 
 .wrap-context	
 	display: flex
@@ -227,7 +228,6 @@ body textarea:required:valid
 				font-size: em(13px)
 				color: #a6a9ab
 
-
 .brand
 	height: auto
 	background: #ffffff
@@ -275,6 +275,10 @@ body textarea:required:valid
 
 	.button
 		margin: 60px 0 70px
+
+.blog-item__view
+	display: none
+	margin-top: 50px
 
 .email
 	height: auto
@@ -355,6 +359,8 @@ body textarea:required:valid
 				transition: all .3s ease
 				&:hover
 					color: $accent-color-pink
+
+
 //mmenu
 .mm-menu.mm-offcanvas 
 		z-index: 10 !important

@@ -35,25 +35,25 @@
 	
 	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
 	<style>
-		a,a:focus,a:hover{text-decoration:none;color:inherit}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:Roboto,sans-serif;overflow-x:hidden}.hidden{display:none}.button{width:190px;height:45px;outline:0;background:#ff3150;color:#ffc501;font-size:1.125em;border:none;-webkit-border-radius:20px;border-radius:20px;margin-top:20px;-webkit-transition:background .3s ease;transition:background .3s ease}.button:hover{background:#a60019}.button:active{background:#ff3150}.header{height:auto;background:#19283f}.header .logo{padding-top:16px}.header .menu{width:350px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;float:left;padding-top:30px}.header .menu a{color:#a8b9c0;-webkit-transition:all .5s ease;transition:all .5s ease}.header .menu a:hover{color:#05a7a6}.header .search{padding-top:29px;margin-left:10px}.header .search .fa{margin-left:25px;padding-left:20px;border-left:1px solid #a8b9c0;font-size:19px;color:#01c0ba}.header .search input{border:none;outline:0;-webkit-border-radius:12px;border-radius:12px;background:#d9d9d9;color:#444;margin-left:15px;-webkit-transition:background .5s ease;transition:background .5s ease}.header .search input:focus,.header .search input:hover{background:#fff}.header-context{text-align:center;padding:155px 0}.header-context h2{margin-bottom:0;font-weight:lighter;font-size:3.25em;color:#f0f8fb}.header-context h3{margin-top:0;font-weight:400;font-size:1.125em;color:#a8b9c0}
+		a,a:focus,a:hover{text-decoration:none;color:inherit}body::-webkit-scrollbar{width:1em}body::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.4)}body::-webkit-scrollbar-thumb{background-color:#335281;outline:#708090 solid 1px}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:Roboto,sans-serif;overflow-x:hidden}.hidden{display:none}.button{width:190px;height:45px;outline:0;background:#ff3150;color:#ffc501;font-size:1.125em;border:none;-webkit-border-radius:20px;border-radius:20px;margin-top:20px;-webkit-transition:background .3s ease;transition:background .3s ease}.button:hover{background:#a60019}.button:active{background:#ff3150}.header{height:auto;background:#19283f}.header .logo{padding-top:16px}.header .menu{width:350px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;float:left;padding-top:30px}.header .menu a{color:#a8b9c0;-webkit-transition:all .5s ease;transition:all .5s ease}.header .menu a:hover{color:#05a7a6}.header .search{padding-top:29px;margin-left:10px}.header .search .fa{margin-left:25px;padding-left:20px;border-left:1px solid #a8b9c0;font-size:19px;color:#01c0ba}.header .search input{border:none;outline:0;-webkit-border-radius:12px;border-radius:12px;background:#d9d9d9;color:#444;margin-left:15px;-webkit-transition:background .5s ease;transition:background .5s ease}.header .search input:focus,.header .search input:hover{background:#fff}.header-context{text-align:center;padding:155px 0}.header-context h2{margin-bottom:0;font-weight:lighter;font-size:3.25em;color:#f0f8fb}.header-context h3{margin-top:0;font-weight:400;font-size:1.125em;color:#a8b9c0}
 	</style>
 	
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
-	<!-- Load CSS Start -->
+	<!-- Load CSS Start
 	
-	<script>loadCSS( "./css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "./css/header.min.css?ver=1.0.0", false, "all" );</script> -->
 	<script>loadCSS( "./css/main.min.css?ver=1.0.0", false, "all" );</script>
 
 	<!-- Load CSS End -->
 
-	<!-- Load CSS Compilled without JS 
+	<!-- Load CSS Compilled without JS -->
 	<noscript>
 		<link rel="stylesheet" href="./css/fonts.min.css">
 		<link rel="stylesheet" href="./css/main.min.css">
 	</noscript>
--->
+
 </head>
 
 <body>
@@ -63,7 +63,9 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-4 col-sm-11 col-xs-9">
 					<div class="logo">
-						<img src="img/logo.png" alt="logo">
+						<a href="https://dimalizun.github.io/PSD-to-Html-design-studio/app/">
+							<img src="img/logo.png" alt="logo">
+						</a>
 					</div>
 				</div>
 
@@ -173,69 +175,61 @@
 						<div class="hr"><hr></div>
 					</div>
 				</div>
+			</div>
 
-				<div class="col-lg-12">
-					<div class="category">
-						<span class="category-item">All</span>
-						<span class="category-item">Design</span>
-						<span class="category-item">Code</span>
-						<span class="category-item">Photography</span>
-						<span class="category-item">Apps</span>
-					</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#" >
+						<img src="img/work.jpg" alt="work" class="work-item">
+					</a>
 				</div>
-
-
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item">
+					</a>
 				</div>
-        
-				
-				<div class="row">
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<a href="#">
-							<img src="img/work.jpg" alt="work" class="work-item">
-						</a>
-					</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item">
+					</a>
 				</div>
-
-				<div class="col-lg-12">
-					<button class="button">I WANT MORE</button>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item">
+					</a>
 				</div>
 			</div>
+
+			<!--hidden elemens -->
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item work-item__view">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item work-item__view">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item work-item__view">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+					<a href="#">
+						<img src="img/work.jpg" alt="work" class="work-item work-item__view">
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<button class="button show-work" name=".work-item__view">I WANT MORE</button>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
@@ -265,7 +259,10 @@
 						<p>
 							Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.
 						</p>
-						<button class="button">ORDER ME ONE</button>
+						<a href="#contact">
+							<button class="button">ORDER ME ONE</button>
+						</a>
+						
 					</div>
 				</div>
 				<div class="col-lg-7 col-md-6 col-sm-7">
@@ -369,7 +366,9 @@
 					<div class="content">
 						<h2>Start Your Project Now</h2>
 						<p>Leave your description and we start the engine. Don't worry,you can cancel anytime.</p>
-						<button class="button">START PROJECT</button>
+						<a href="#contact">
+							<button class="button">START PROJECT</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -416,7 +415,22 @@
 					</div>
 				</div>
 
-				<button class="button">MORE STORYES</button> 
+
+				<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+					<div class="blog-item blog-item__view">
+						<img src="img/blog-bg.jpg" alt="blog" class="blog-img">
+						<p class="blog-date">January 17, 2017</p>
+						<p class="blog-text">Some Awesome Blog Title Here</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<button class="button show-blog" name=".blog-item__view">
+						MORE STORYES
+					</button> 
+				</div>
 			</div>
 		</div>
 	</section>

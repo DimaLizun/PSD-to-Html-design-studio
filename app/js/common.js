@@ -7,76 +7,7 @@ $(function() {
 		});
 	};
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	//search
-	var submitIcon = $('.searchbox-icon');
-	var inputBox = $('.searchbox-input');
-	var searchBox = $('.searchbox');
-	var isOpen = false;
-	submitIcon.click(function(){
-		if(isOpen == false){
-			searchBox.addClass('searchbox-open');
-			inputBox.focus();
-			isOpen = true;
-		} else {
-			searchBox.removeClass('searchbox-open');
-			inputBox.focusout();
-			isOpen = false;
-		}
-	});  
-	submitIcon.mouseup(function(){
-		return false;
-	});
-	searchBox.mouseup(function(){
-		return false;
-	});
-	$(document).mouseup(function(){
-		if(isOpen == true){
-			$('.searchbox-icon').css('display','block');
-			submitIcon.click();
-		}
-	});
-
-
-	function buttonUp(){
-		var inputVal = $('.searchbox-input').val();
-		inputVal = $.trim(inputVal).length;
-		if( inputVal !== 0){
-			$('.searchbox-icon').css('display','none');
-		} else {
-			$('.searchbox-input').val('');
-			$('.searchbox-icon').css('display','block');
-		}
-	}
-
-
+	// mobile menu
 	var $menu = $("#my-menu").mmenu({
    //   options
  	});
@@ -99,6 +30,26 @@ $(function() {
 	});
 
 
+	// fuul view block
+	function showElem(valueAttr) {
+		var name = $(valueAttr).attr('name');
+		var display = $(name).css('display');
+
+		if (display == 'none')
+			$(name).css("display", "inline-block");
+		 else 
+			$(name).css("display", "none");
+	};
+
+	$('.show-work').click(function(){
+		showElem('.show-work');
+	});
+
+	$('.show-blog').click(function(){
+		showElem('.show-blog');
+	});
+
+
   // scroll
 	$('a[href^="#"]').click(function () {
 		event.preventDefault();
@@ -107,10 +58,6 @@ $(function() {
 
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
-
-
-	
-
 
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
